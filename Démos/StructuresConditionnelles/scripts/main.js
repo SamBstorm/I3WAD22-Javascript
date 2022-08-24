@@ -51,6 +51,7 @@ else{
 }*/
 
 //SWITCH()... CASE... : ...
+
 /*
 let lang_user = prompt("Veuillez indiquer votre langue (FR):\nPlease set your langage (EN):\nGelieve uw taal door te geven (NL):");
 
