@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Démonstration : Le DOM</title>
+    </head>
+    <body>
+        <h1 id="MainH1">Le DOM</h1>
+        <div>
+            <div>Rouge : <input id="redRange"   type="range"></div>
+            <div>Vert : <input  id="greenRange" type="range"></div>
+            <div>Bleu : <input  id="blueRange"  type="range"></div>
+            <div><input id="refreshBtn" type="button" value="Actualiser" onclick="getHexColor()"></div>
+        </div>
+        <div>
+            <h2>Résultat :</h2>
+            <input id="resultColor" type="color">
+        </div>
+        
+    <script src="./scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
