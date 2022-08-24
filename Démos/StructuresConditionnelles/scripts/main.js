@@ -51,7 +51,6 @@ else{
 }*/
 
 //SWITCH()... CASE... : ...
-
 /*
 let lang_user = prompt("Veuillez indiquer votre langue (FR):\nPlease set your langage (EN):\nGelieve uw taal door te geven (NL):");
 
@@ -73,7 +72,6 @@ switch (lang_user) {
 
 //TERNAIRE : (condition) ? valeur_si_vrai : valeur_si_faux
 // /!\ : Ce n'est pas une structure conditionnelle, il s'agit d'une opération retournant une valeur selon une condition.
-
 /*
 let is_female = confirm("Êtes-vous une femme?");
 
@@ -111,7 +109,6 @@ console.warn(`x : ${x} (${typeof (x)}) | y : ${y} (${typeof (y)})  =>  x !== y :
 */
 
 /* Truthy / Falsy */
-
 /*console.log(`N'importe quel type peut être utilisé comme booléen!`);
 
 let not_a_bool;
