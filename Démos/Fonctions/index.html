@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démonstration : Les fonctions</title>
+</head>
+<body>
+    <div>
+        <label for="prenom">Quel est votre prénom?</label>
+        <input id="prenom" type="text">
+    </div>
+    <div>
+        <p>Quel est votre sexe?</p>
+        <label for="genre_f">Femme</label>
+        <input id="genre_f" type="radio" name="genre" value="F">
+        <label for="genre_m">Homme</label>
+        <input id="genre_m" type="radio" name="genre" value="M">
+        <label for="genre_o">Autre</label>
+        <input id="genre_o" type="radio" name="genre" value="O">
+    </div>
+    <input type="button" value="Sauvegarder" onclick="saveInfo()">
+    <script src="./scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
