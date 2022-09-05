@@ -1,0 +1,20 @@
+input[type="button"] {
+    border-radius: 25%;
+    border: none;
+    width: 24px;
+    height: 24px;
+    margin: 2px;
+    background-color: aliceblue;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.125);
+}
+
+input#show {
+    border-radius: 3px;
+    border: 2px solid seagreen;
+    border-top-color: darkgreen;
+    background-color: darkseagreen;
+    color: seagreen;
+    margin: 0 2px 8px;
+    width: 112px;
+    box-shadow: 0 -2px 0 seagreen;
+}
