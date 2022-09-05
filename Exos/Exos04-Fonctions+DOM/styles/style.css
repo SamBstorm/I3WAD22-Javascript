@@ -19,16 +19,18 @@ input#show {
     box-shadow: 0 -2px 0 seagreen;
 }
 
-body>div {
+body>div>div {
     background-color: cadetblue;
     padding: 20px;
     display: inline-block;
     border-radius: 10px;
-    border-width: 4px;
-    border-style:solid;
-    border-color: cadetblue;
-    border-top-color: lightblue;
-    border-bottom-color: steelblue;
+}
+
+body>div {
+    background-image: linear-gradient(to bottom, lightblue, cadetblue 10%, cadetblue 90%, steelblue );
+    padding: 4px;
+    border-radius: 14px;
+    display: inline-block;
 }
 
 input[value="="] {

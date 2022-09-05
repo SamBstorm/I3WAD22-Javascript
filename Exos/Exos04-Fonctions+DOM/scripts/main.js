@@ -1,14 +1,15 @@
 const html_show = document.getElementById("show");
+const html_calcul = document.getElementById("calcul");
 html_show.value = 0;
 let decimalPressed = false;
-let equalPressed = false;
+let firstNumber = true;
 let number1;
 let operator;
 
 const pressNumber = function (nb) {
-    if (equalPressed) {
+    if(firstNumber){
         html_show.value = 0;
-        equalPressed = false;
+        firstNumber = false;
     }
     if (nb == 0 && html_show.value === "0") nb = "";
     if (nb != 0 && nb != '.' && html_show.value === "0") html_show.value = "";
@@ -24,12 +25,16 @@ const pressDecimal = function () {
 }
 
 const pressOperator = function (ope) {
+    let temp = parseFloat(html_show.value);
+    if(number1 || number1 == 0) pressEqual();
     number1 = parseFloat(html_show.value);
-    console.log(`number1 : ${number1}`);
+    // console.log(`number1 : ${number1}`);
     operator = ope;
-    console.log(`operator : ${operator}`);
+    // console.log(`operator : ${operator}`);
+    html_calcul.value +=`${temp} ${operator} `
     decimalPressed = false;
-    html_show.value = "0";
+    html_show.value = number1;
+    firstNumber = true;
 }
 
 const pressEqual = function () {
@@ -51,6 +56,8 @@ const pressEqual = function () {
             html_show.value = number1 / number2;
             break;
     }
-    equalPressed = true;
+    firstNumber = true;
     decimalPressed = false;
+    number1 = undefined;
+    operator = undefined;
 }
