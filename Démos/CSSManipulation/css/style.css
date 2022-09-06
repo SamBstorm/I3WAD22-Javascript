@@ -1,0 +1,7 @@
+span{
+    background-color: yellowgreen;
+}
+
+body *{
+    display: block;
+}

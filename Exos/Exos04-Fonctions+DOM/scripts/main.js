@@ -31,7 +31,7 @@ const pressOperator = function (ope) {
     // console.log(`number1 : ${number1}`);
     operator = ope;
     // console.log(`operator : ${operator}`);
-    html_calcul.value +=`${temp} ${operator} `
+    html_calcul.value +=`${temp}\n${operator} `
     decimalPressed = false;
     html_show.value = number1;
     firstNumber = true;

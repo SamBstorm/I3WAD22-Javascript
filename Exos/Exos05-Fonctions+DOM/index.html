@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Exercice 05 - Fonctions et DOM</title>
+</head>
+<body>
+    <h1>Calcul de forme géométrique</h1>
+    <div>
+        Veuillez sélectionner une forme :
+        <!-- select#formChoice>option[value=$]*4 -->        
+        <select name="" id="formChoice">
+            <option value="1">Rectangle</option>
+            <option value="2">Triangle</option>
+            <option value="3">Carré</option>
+            <option value="4">Cercle</option>
+        </select>
+        <input type="button" value="Sélectionner" onclick="showInputs()">
+        <div id="rect">
+            <h2>Rectangle</h2>
+            <div>
+                <label for="rect_hauteur">Hauteur : </label>
+                <input type="number" id="rect_hauteur">
+            </div>
+            <div>
+                <label for="rect_largeur">Largeur : </label>
+                <input type="number" id="rect_largeur">
+            </div>
+        </div>
+        <div id="tri">
+            <h2>Triangle</h2>
+            <div>
+                <label for="tri_hauteur">Hauteur : </label>
+                <input type="number" id="tri_hauteur">
+            </div>
+            <div>
+                <label for="tri_base">Base : </label>
+                <input type="number" id="tri_base">
+            </div>
+        </div>
+        <div id="carre">
+            <h2>Carré</h2>
+            <div>
+                <label for="carre_cote">Coté : </label>
+                <input type="number" id="carre_cote">
+            </div>
+        </div>
+        <div id="circle">
+            <h2>Cercle</h2>
+            <div>
+                <label for="circle_rayon">Rayon : </label>
+                <input type="number" id="circle_rayon">
+            </div>
+        </div>
+        <input type="button" value="Calculer" onclick="calculer()">
+    </div>
+    <p id="result"></p>
+    <script src="./scripts/geom.js" type="text/javascript"></script>
+    <script src="./scripts/main.js" type="text/javascript"></script>
+</body>
+</html>
