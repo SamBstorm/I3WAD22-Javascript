@@ -1,0 +1,13 @@
+.picker>div , .colorMe>div {
+    width : 16px;
+    height : 16px;
+}
+
+.currentColor>div {
+    width : 32px;
+    height : 32px;
+}
+
+td {
+    border: 1px solid black;
+}
