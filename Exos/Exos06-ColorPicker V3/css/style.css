@@ -1,0 +1,51 @@
+.picker>div , .colorMe>div {
+    width : 16px;
+    height : 16px;
+}
+
+.currentColor>div {
+    width : 32px;
+    height : 32px;
+}
+
+td {
+    border: 1px solid black;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+.black {
+    background-color: #000000;
+}
+.red{
+    background-color : #FF0000;
+}
+.green
+{
+    background-color :#00FF00;
+}
+.blue
+{
+    background-color :#0000FF;
+}
+.yellow
+{
+    background-color :#FFFF00;
+}
+.cyan
+{
+    background-color :#00FFFF;
+}
+.magenta
+{
+    background-color :#FF00FF;
+}
+.grey
+{
+    background-color :#AAAAAA;
+}
+.darkgrey
+{
+    background-color :#555555;
+}
