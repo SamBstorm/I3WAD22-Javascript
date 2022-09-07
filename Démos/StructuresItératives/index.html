@@ -11,13 +11,18 @@
     <div><label for="limit">Limite d'itération :</label><input id="limit" type="number" value="10"></div>
     <input type="button" value="execute" onclick="execute()">
     <div style="display: flex;">
-        <div style="width:40%">
+        <div style="width:30%">
             <h2>WHILE</h2>
             <p id="result_while"></p>
         </div>
-        <div style="width:40%">
+        <div style="width:30%">
             <h2>DO...WHILE</h2>
             <p id="result_dowhile"></p>
+        </div>
+        <div style="width:30%">
+            <h2>FOR (classique)</h2>
+            <p id="result_for"></p>
+            <p>Attention : la dernière ligne ne sera pas visible car i est déclarée à l'intérieur de la boucle, donc crash (voir F12)</p>
         </div>
     </div>
     <script src="./scritps/main.js" type="text/javascript"></script>
