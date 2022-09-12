@@ -1,0 +1,8 @@
+td {
+    border: 1px solid black;
+}
+
+td div{
+    width: 8px;
+    height: 8px;
+}
