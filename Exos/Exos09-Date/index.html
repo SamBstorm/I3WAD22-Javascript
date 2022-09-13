@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 09 - Combien de dodos avant ...</title>
+</head>
+
+<body>
+    <h1>Combien de dodos avant ...</h1>
+    <!-- div>(div>(label+input:radio[name=choixDate]))*6 -->
+    <div>
+        <div>
+            <input type="radio" name="choixDate" id="halloween" value="halloween">
+            <label for="halloween">Halloween</label>
+        </div>
+        <div>
+            <input type="radio" name="choixDate" id="saintnic" value="saintnic">
+            <label for="saintnic">Saint-Nicolas</label>
+        </div>
+        <div>
+            <input type="radio" name="choixDate" id="christmas" value="christmas">
+            <label for="christmas">Noël</label>
+        </div>
+        <div>
+            <input type="radio" name="choixDate" id="newyear" value="newyear">
+            <label for="newyear">Nouvel An</label>
+        </div>
+        <div>
+            <input type="radio" name="choixDate" id="valentine" value="valentine">
+            <label for="valentine">Saint-Valentin</label>
+        </div>
+        <div>
+            <input type="radio" name="choixDate" id="custom" value="custom">
+            <label for="custom">Personnalisée</label>
+            <input type="date" disabled>
+        </div>
+        <input type="button" value="Valider">
+    </div>
+    <p id="result"></p>
+    <script src="./scripts/main.js" type="text/javascript"></script>
+</body>
+
+</html>
