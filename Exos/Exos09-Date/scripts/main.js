@@ -1,4 +1,9 @@
 const html_radio_choixDate = document.querySelectorAll("input[name=choixDate]");
+const html_btn = document.querySelector("input[type=button]");
+const html_customChoice = document.querySelector("#customChoice");
+const html_classicChoice = document.querySelectorAll(".classicChoice");
+const html_dateCustom = document.querySelector("#customChoice>input[type=date]");
+const html_radioCustom = document.querySelector("#customChoice>input[type=radio]");
 
 const nombreDeNuit = function (jour, mois) {
     let today = new Date();
@@ -40,13 +45,27 @@ const validateChoice = function () {
             nbNuit = nombreDeNuit(31, 10);
             break;
         case "custom":
-            // nbNuit = nombreDeNuit(1, 1);
+            let dateCible = new Date(html_dateCustom.value);
+            nbNuit = nombreDeNuit(dateCible.getDate(), dateCible.getMonth()+1);
             break;
 
         default:
             break;
     }
-    document.querySelector("#result").innerHTML=`Il reste ${nbNuit} dodo${(nbNuit>1)?'s':''}!`;
+    document.querySelector("#result").innerHTML = `Il reste ${nbNuit} dodo${(nbNuit > 1) ? 's' : ''}!`;
 }
 
-document.querySelector("input[type=button]").onclick = validateChoice;
+const activateCustomField = function () {
+    html_dateCustom.disabled = false;
+    html_radioCustom.checked = true;
+}
+
+const disableCustomField = function(){
+    html_dateCustom.disabled = true;
+}
+
+html_btn.onclick = validateChoice;
+html_customChoice.onclick = activateCustomField;
+for (const choice of html_classicChoice) {
+    choice.onclick = disableCustomField;
+}
